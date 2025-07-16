@@ -39,7 +39,7 @@ pipeline {
 
         stage('SonarQube Report') {
             steps {
-                sh "mvn sonar:sonar"
+                sh "mvn sonar:sonar package"
             }
         }
 
