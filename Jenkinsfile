@@ -53,7 +53,7 @@ pipeline {
                 sh """
                     curl -u prassadh:password \
                     --upload-file target/maven-web-application.war \
-                    "http://13.201.17.16:9090/manager/text/deploy?path=/maven-web-application&update=true"
+                    "http://13.201.77.16:9090/manager/text/deploy?path=/maven-web-application&update=true"
                 """
             }
         }
